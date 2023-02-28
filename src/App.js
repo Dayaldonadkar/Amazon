@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Banner from "./Components/Banner";
+import Banner2 from "./Components/Banner2";
+import Navbar from "./Components/Navbar";
+import Swiper from "./Components/Swiper";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bg-[#E2E6E6] relative">
+      <div className="sticky top-0 left-0">
+        <Navbar />
+      </div>
+      <Banner />
+      <Banner2 />
+      <Swiper />
     </div>
   );
-}
+};
 
 export default App;
